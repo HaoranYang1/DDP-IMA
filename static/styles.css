@@ -1,0 +1,313 @@
+body {
+	margin: 0;
+	font-family: 'League Spartan', sans-serif;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+/*Header section*/
+
+header{
+	background-color: rgb(255, 0, 0);
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 15px;
+}
+
+header h1{
+	color:  rgb(255, 255, 255);
+	font-size: 40px;
+}
+
+header img{
+	border-radius: 50px;
+	width: 200px;
+	border: 20px solid white;
+}
+	header h3{
+    color:  rgb(255, 255, 255);
+    font-size: 20px;
+    animation: 15s wordsLoop linear infinite normal;
+   }
+   .spark{
+       height: 5px;
+       width: 90%;
+       margin: 0 auto;
+       border-radius: 10%;
+       box-shadow:3px 3px 10px rgb(168, 168, 219);
+       /* background-color: aquamarine; */
+	animation:mymove 6s infinite;
+   }
+   @keyframes mymove
+   {
+   from {background-color:rgb(235, 192, 100);}
+   to {background-color:rgb(10, 106, 119);}
+}    @keyframes wordsLoop {
+    0% {
+        transform: translateX(200px);
+        -webkit-transform: translateX(200px);
+    }
+    100% {
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+/*Main section*/
+main{
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+main img{
+	max-width: 100%;
+}
+
+main h2{
+	font-size: 30px;
+	margin: 40px 0 10px;
+}
+
+p {
+    text-align: center;
+    font-size: 25px;
+    color: cadetblue;
+    font-family: fantasy;
+}
+
+#hr1 {
+    background-color: cadetblue;
+    height: 2px;
+    width: 75%;
+}
+
+.imgbox {
+    border-top: 5px solid cadetblue;
+    width: 60%;
+    height: 40%;
+    margin: 0 auto;
+}
+
+.img {
+    width: 90%;
+    height: 40%;
+    margin: 0 auto;
+    display: none;
+}
+
+
+.slide{
+    width:640px;
+    height:480px;
+    position: relative;
+    left:50%;
+    top:250px;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+}
+.slide input{
+    position: fixed;
+    bottom:10px;
+}
+#img1{
+    left:20px;
+}
+#img2{
+    left:40px;
+}
+#img3{
+    left:60px;
+}
+#img4{
+    left:80px;
+}
+#img5{
+    left:100px;
+}
+.images{
+    width:3200px;
+    height:480px;
+    display:flex;
+}
+.image{
+    width:640px;
+    height:480px;
+    transition: 0.8s linear;
+}
+.image img{
+    height:100%;
+}
+#img1:checked ~ .first{
+    margin-left:0;
+}
+#img2:checked ~ .first{
+    margin-left:-640px;
+}
+#img3:checked ~ .first{
+    margin-left:-1280px;
+}
+#img4:checked ~ .first{
+    margin-left:-1920px;
+}
+#img5:checked ~ .first{
+    margin-left:-2560px;
+}
+
+main a{
+	color: black;
+}
+
+main a:hover{
+	background-color: black;
+	color: white;
+}
+
+p.caption{
+	margin-top: 0;
+	color:  grey;
+	font-style: italic;
+	font-size: 20px;
+}
+
+/*Footer section*/
+
+footer{
+	background-color: red;
+	text-align: center;
+	padding: 50px;
+}
+
+footer p{
+	margin: 0;
+	color:  white;
+	font-size: 30px;
+}
+
+footer a{
+	color: white;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+.fa-android {
+  background: #a4c639;
+  color: white;
+}
+
+.fa-dribbble {
+  background: #ea4c89;
+  color: white;
+}
+
+.fa-vimeo {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-tumblr {
+  background: #2c4762;
+  color: white;
+}
+
+.fa-vine {
+  background: #00b489;
+  color: white;
+}
+
+.fa-foursquare {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-stumbleupon {
+  background: #eb4924;
+  color: white;
+}
+
+.fa-flickr {
+  background: #f40083;
+  color: white;
+}
+
+.fa-yahoo {
+  background: #430297;
+  color: white;
+}
+
+.fa-soundcloud {
+  background: #ff5500;
+  color: white;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+.fa-rss {
+  background: #ff6600;
+  color: white;
+}
+
+footer a:hover{
+	background-color: white;
+	color: black;
+}
